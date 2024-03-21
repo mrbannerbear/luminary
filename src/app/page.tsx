@@ -1,7 +1,10 @@
+import Banner from "@/ui/components/Banner";
+
 const page = () => {
     return (
-        <div>
-            
+        <div className="min-h-screen">
+            <Banner/>
+            hello
         </div>
     );
 };
