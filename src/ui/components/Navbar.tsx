@@ -3,7 +3,7 @@ import "../../globals.css"
 
 const Navbar = () => {
     return (
-        <nav className="nav1">
+        <nav className="nav1 z-50">
 
             <div>
                 <span className="text-xl">
