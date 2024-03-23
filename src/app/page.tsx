@@ -1,8 +1,8 @@
-import Banner from "@/ui/components/Banner";
+import Banner from "@/ui/components/home/Banner";
 
 const page = () => {
     return (
-        <div className="min-h-screen">
+        <div className="min-h-[200vh]">
             <Banner/>
             
         </div>

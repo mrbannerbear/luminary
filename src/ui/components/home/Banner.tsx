@@ -14,7 +14,7 @@ const Banner = () => {
 
   let bannerArray: bannerType[] = [
     {
-      url: "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      url: "https://images.unsplash.com/photo-1502637098811-fa9526d2b659?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       caption: "Renewable Energy, One City at a Time",
       subcaption: `We're teaming up with local governments globally to transform entire cities into renewable energy hubs for sustainable urban living.`,
       link: "/projects/renewable-energy-01"
@@ -33,29 +33,28 @@ const Banner = () => {
         subcaption: `How we're 
         tackling illegal deforestation, poaching, and supporting endangered
          species.`,
-        link: ""
+        link: "/projects/wildlife-conservation_01"
     }
   ];
 
   const [bannerContent, setBannerContent] = useState<bannerType>(bannerArray[0])
 
+  // Using useEffect for cleanup function as React doesn't directly handle setInterval 
   useEffect(() => {
     let currentIndex = 0;
 
     const intervalId = setInterval(() => {
         setBannerContent(bannerArray[currentIndex]);
-        console.log(currentIndex);
-        currentIndex = (currentIndex + 1) % bannerArray.length;
+        currentIndex = (currentIndex + 1) % bannerArray.length; // Using modulus creates an infinite loop
     }, 4000);
 
-    return () => clearInterval(intervalId);
+    return () => clearInterval(intervalId); // Cleanup function to stop banner slide when component unmounts
+// eslint-disable-next-line react-hooks/exhaustive-deps
 }, []);
 
 
-
-
   return (
-    <div className="min-h-screen w-screen">
+    <div className="min-h-screen">
     <div
       style={{
         backgroundImage: `url(${

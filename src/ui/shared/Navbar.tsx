@@ -1,9 +1,35 @@
+"use client"
+
 import Link from "next/link";
 import "../../globals.css"
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
+
+    const [navClass, setNavClass] = useState<string>("nav1")
+
+    useEffect(() => {
+        const handleScroll = () => {
+          const scrollPosition = window.scrollY;
+          if (scrollPosition < 350) {
+            setNavClass("nav1");
+          } else {
+            setNavClass("nav2");
+          }
+        };
+      
+        window.addEventListener("scroll", handleScroll);
+      
+        // Cleanup function
+        return () => {
+          window.removeEventListener("scroll", handleScroll);
+        };
+      }, []);
+      
+   
+
     return (
-        <nav className="nav1 z-50">
+        <nav className={`z-50 ${navClass}`}>
 
             <div>
                 <span className="text-xl">
