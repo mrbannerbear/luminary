@@ -4,7 +4,7 @@ const page = () => {
     return (
         <div className="min-h-screen">
             <Banner/>
-            hello
+            
         </div>
     );
 };
