@@ -33,19 +33,19 @@ const Mission = () => {
                 className="col-span-2 w-full h-full"
                 height={250}
                 width={400}
-                alt=""
+                alt="One of our projects to provide energy for six villages using turbines"
                 src={"https://images.unsplash.com/photo-1562519990-50eb51e282b2?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}/>
                 <Image 
                 className="col-span-1 h-44"
                 height={250}
                 width={400}
-                alt=""
+                alt="Ocean cleansing on the Arctic coast"
                 src={"https://images.unsplash.com/photo-1582032951374-314efb7ccb76?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}/>
                 <Image 
                 className="col-span-1 h-44"
                 height={250}
                 width={400}
-                alt=""
+                alt="An endangered tortoise, one of the many wildlife we are trying to protect"
                 src={"https://images.unsplash.com/photo-1594225513799-a9f646521469?q=80&w=1862&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}/>
             </div>
         </div>
