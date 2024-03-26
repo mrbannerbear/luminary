@@ -31,4 +31,8 @@ button{
   @apply text-purple-50 bg-transparent
 }
 
+h2{
+  @apply my-4 text-2xl font-medium
+}
+
 

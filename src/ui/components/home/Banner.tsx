@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-AOS.init();
 
 const Banner = () => {
   interface bannerType {
@@ -45,11 +44,12 @@ const Banner = () => {
 
   // Using useEffect for cleanup function as React doesn't directly handle setInterval
   useEffect(() => {
-    let currentIndex = 0;
-
+    let currentIndex = 0
+    AOS.init()
     const intervalId = setInterval(() => {
       setBannerContent(bannerArray[currentIndex]);
       currentIndex = (currentIndex + 1) % bannerArray.length; // Using modulus creates an infinite loop
+      AOS.refresh()
     }, 4000);
 
     return () => clearInterval(intervalId); // Cleanup function to stop banner slide when component unmounts
@@ -63,7 +63,7 @@ const Banner = () => {
           backgroundImage: `url(${bannerContent.url})`,
         }}
         className="min-h-screen  bg-cover bg-center -mt-32 lg:-mt-20 z-40 flex justify-left items-center"
-      data-aos="fade-in">
+        data-aos="fade-in" data-aos-delay="250" data-aos-duration="250">
         <div className="absolute w-full h-full bg-gradient-to-r from-black/60 via-transparent to-transparent"></div>
         <div className="text-purple-50 z-50 px-24 max-w-[650px]">
           <h2 className="text-4xl font-medium my-3">{bannerContent.caption}</h2>
