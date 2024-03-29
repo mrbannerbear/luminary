@@ -70,7 +70,7 @@ const Banner = () => {
           <p>{bannerContent.subcaption}</p>
           <p className="my-3">
             <Link href={bannerContent.url}>
-              <button>Learn More</button>
+              <button className="border-purple-50">Learn More</button>
             </Link>
           </p>
         </div>

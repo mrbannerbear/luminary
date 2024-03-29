@@ -17,17 +17,17 @@ nav{
 }
 
 button{
-    @apply py-1 px-2 border-purple-50 border-[1.5px]
+    @apply py-1 px-2  border-[1.5px] border-purple-950
 }
 
 .nav2{
-  button{
-    @apply border-purple-950
-  }
   @apply bg-purple-50 text-purple-950 
 }
 
 .nav1{
+  button{
+    @apply border-purple-50
+  }
   @apply text-purple-50 bg-transparent
 }
 
