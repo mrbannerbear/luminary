@@ -1,4 +1,5 @@
 import Banner from "@/ui/components/home/Banner";
+import Blogs from "@/ui/components/home/Blogs";
 import Contribute from "@/ui/components/home/Contribute";
 import Impact from "@/ui/components/home/Impact";
 import Mission from "@/ui/components/home/Mission";
@@ -11,8 +12,9 @@ const page = () => {
       <Banner />
       <Mission />
       <Programs />
-      <Contribute />
       <Impact/>
+      <Contribute />
+      <Blogs/>
       <Newsletter/>
     </div>
   );

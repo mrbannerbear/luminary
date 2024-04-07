@@ -1,6 +1,6 @@
 import Section from "@/ui/shared/Section";
 import Image from "next/image";
-import NewsletterForm from "./NewsletterForm";
+import NewsletterForm from "./Newsletter_Form";
 
 const Newsletter = () => {
   return (

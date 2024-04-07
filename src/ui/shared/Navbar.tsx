@@ -33,7 +33,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`z-50 ${navClass}`}>
+    <nav className={`z-40 ${navClass}`}>
       <div>
         <span className="text-xl">LUMINARY</span>
       </div>
