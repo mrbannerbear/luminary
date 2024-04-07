@@ -20,6 +20,10 @@ button{
     @apply py-1 px-2  border-[1.5px] border-purple-950
 }
 
+.btn{
+    @apply py-1 px-2  border-[1.5px] border-purple-50
+}
+
 .nav2{
   @apply bg-purple-50 text-purple-950 
 }

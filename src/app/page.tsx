@@ -2,6 +2,7 @@ import Banner from "@/ui/components/home/Banner";
 import Contribute from "@/ui/components/home/Contribute";
 import Impact from "@/ui/components/home/Impact";
 import Mission from "@/ui/components/home/Mission";
+import Newsletter from "@/ui/components/home/Newsletter";
 import Programs from "@/ui/components/home/Programs";
 
 const page = () => {
@@ -11,7 +12,8 @@ const page = () => {
       <Mission />
       <Programs />
       <Contribute />
-      <Impact/>
+      {/* <Impact/> */}
+      <Newsletter/>
     </div>
   );
 };

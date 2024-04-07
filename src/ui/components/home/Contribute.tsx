@@ -13,21 +13,21 @@ const Contribute = () => {
     const flexItems : contributeObject[] = [
         {
             id: 1,
-            height: "h-80",
+            height: "h-56 lg:h-80",
             headline: "How You Can Help Us",
             caption: "",
             cta: <button className="border-purple-50">Get Involved</button>
         },
         {
             id: 2,
-            height: "h-80 lg:h-96",
+            height: "h-56 lg:h-96",
             headline: "Donate for a Project",
             caption: "Starting from as little as $10, you can contribute to one of our projects",
             cta: <button className="border-purple-50">Contribute Now</button>
         },
         {
             id: 3,
-            height: "h-80",
+            height: "h-56 lg:h-80",
             headline: "Follow us on our socials",
             caption: "",
             cta: <></>
@@ -37,7 +37,7 @@ const Contribute = () => {
     return (
         <Section>
 
-            <div className="flex flex-col lg:flex-row justify-between items-center text-purple-50 px-6">
+            <div className="flex flex-col lg:flex-row justify-between items-center text-purple-50 lg:px-6">
                 {
                     flexItems.map(each => (
                         <div key={each.id} className={`${each.height} flex flex-col gap-2 justify-center items-center
