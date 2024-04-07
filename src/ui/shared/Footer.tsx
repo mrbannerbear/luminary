@@ -16,7 +16,7 @@ const Footer = () => {
             </div>
 
             <div className="flex flex-col lg:flex-row gap-4 lg:gap-10">
-            <div className="w-full md:w-1/2 lg:w-1/4 px-4 mb-8 md:mb-0">
+            <div className="w-full md:w-1/2  px-4 mb-8 md:mb-0">
               <h3 className="text-lg font-bold mb-4">Links</h3>
               <ul className="text-sm">
                 <Link href={"/"}>
@@ -33,12 +33,12 @@ const Footer = () => {
                 </Link>
               </ul>
             </div>
-            <div className="w-full md:w-1/2 lg:w-1/4 px-4 mb-8 md:mb-0">
+            <div className="w-full md:w-1/2  px-4 mb-8 md:mb-0">
               <h3 className="text-lg font-bold mb-4">Contact Us</h3>
               <p className="text-sm">Email: <span className="text-purple-200 hover:underline cursor-pointer">info@example.com</span></p>
               <p className="text-sm">Phone: <span className="text-purple-200 hover:underline cursor-pointer">123-456-7890</span></p>
             </div>
-            <div className="w-full md:w-1/2 lg:w-1/4 px-4 mb-8 md:mb-0">
+            <div className="w-full md:w-1/2  px-4 mb-8 md:mb-0">
               <h3 className="text-lg font-bold mb-4">Follow Us</h3>
               <div className="flex space-x-4">
                 <Link href="#" className="block">
