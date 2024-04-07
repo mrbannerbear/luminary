@@ -12,7 +12,7 @@ const page = () => {
       <Mission />
       <Programs />
       <Contribute />
-      {/* <Impact/> */}
+      <Impact/>
       <Newsletter/>
     </div>
   );

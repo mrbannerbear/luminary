@@ -62,9 +62,9 @@ const Banner = () => {
         style={{
           backgroundImage: `url(${bannerContent.url})`,
         }}
-        className="min-h-screen  bg-cover bg-center -mt-32 lg:-mt-20 z-40 flex justify-left items-center"
+        className="h-[105vh]  bg-cover bg-center -mt-[15vh] lg:-mt-20 z-40 flex justify-left items-center"
         data-aos="fade-in" data-aos-delay="250" data-aos-duration="250">
-        <div className="absolute w-full h-full bg-gradient-to-r from-black/60 via-transparent to-transparent"></div>
+        <div className="absolute w-full h-[105vh] bg-gradient-to-r from-black/60 via-transparent to-transparent"></div>
         <div className="text-purple-50 z-50 px-24 max-w-[650px]">
           <h2 className="text-4xl font-medium my-3">{bannerContent.caption}</h2>
           <p>{bannerContent.subcaption}</p>

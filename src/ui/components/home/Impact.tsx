@@ -42,8 +42,13 @@ const Impact = () => {
 
   return (
     <Section>
-      <div className="min-h-[200vh]" ref={counterRef}>
+      <div ref={counterRef}>
         {/* {numbers} */}
+
+        <div className="text-center">
+          <h1 className="text-3xl"><span>100000+</span> people involved</h1>
+        </div>
+
       </div>
     </Section>
   );

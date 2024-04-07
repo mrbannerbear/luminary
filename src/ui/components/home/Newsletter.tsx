@@ -1,5 +1,6 @@
 import Section from "@/ui/shared/Section";
 import Image from "next/image";
+import NewsletterForm from "./NewsletterForm";
 
 const Newsletter = () => {
   return (
@@ -8,23 +9,7 @@ const Newsletter = () => {
         <div className="max-w-sm">
           <h2>Subscribe to Our Newsletter</h2>
           <p className="-mt-3 mb-4">Get all the news about our projects, new developments & more!</p>
-          <form action="" className="flex flex-col gap-2" onSubmit={() => alert("hi")}>
-            <input
-              type="text"
-              placeholder="Name"
-              name="name"
-              className="text-purple-950 border-[1.5px] py-1 px-2 border-purple-50
-                            outline-none"
-            />
-            <input
-              type="email"
-              placeholder="Email"
-              name="email"
-              className="text-purple-950 border-[1.5px] py-1 px-2 border-purple-50
-                            outline-none"
-            />
-            <input type="button" value="Subscribe" className="btn" />
-          </form>
+            <NewsletterForm/>
         </div>
         <div>
           <Image
