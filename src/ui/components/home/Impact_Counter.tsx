@@ -14,9 +14,10 @@ const Impact_Counter = () => {
       const scrollTrigger = () => {
         // Without the line below, we encounter a TypeScript error saying counterRef.element could be 'null'
         const element = counterRef.current as HTMLInputElement;
-  
+        
+        let elementPosition: number = element.getBoundingClientRect().top
         // 4. Figuring out the exact position the user should be to trigger the function
-        if (element.getBoundingClientRect().top < window.innerHeight / 2 + 10) {
+        if (elementPosition < window.innerHeight / 2 + 10) {
           if (numbers < 150000) {
             // Start interval to increment numbers
             const interval = setInterval(() => {

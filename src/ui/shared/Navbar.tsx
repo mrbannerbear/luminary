@@ -3,16 +3,18 @@
 import Link from "next/link";
 import "../../globals.css";
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
-  let defaultState: string = window.location.pathname === "/" ? "nav1" : "nav2";
+  let router = usePathname()
+  let defaultState: string = router === "/" ? "nav1" : "nav2";
   const [navClass, setNavClass] = useState<string>(defaultState);
 
   useEffect(() => {
     // handleScroll function which is used in event listener & cleanup function
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      if (window.location.pathname === "/") {
+      if (router === "/") {
         if (scrollPosition < 350) {
           setNavClass("nav1");
         } else {
@@ -30,7 +32,7 @@ const Navbar = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [router]);
 
   return (
     <nav className={`z-40 ${navClass}`}>
