@@ -1,4 +1,5 @@
 import Section from "@/ui/shared/Section";
+import Socials from "@/ui/shared/Socials";
 
 const Contribute = () => {
 
@@ -30,7 +31,7 @@ const Contribute = () => {
             height: "h-56 lg:h-80",
             headline: "Follow us on our socials",
             caption: "",
-            cta: <></>
+            cta: <Socials className={"flex text-2xl gap-3"}/>
         }
     ]
 
@@ -45,7 +46,7 @@ const Contribute = () => {
                         border-purple-50`}>
                             <h3 className="text-2xl">{each.headline}</h3>
                             <p>{each.caption}</p>
-                            <p>{each.cta}</p>
+                            <div>{each.cta}</div>
                         </div>
                     ))
                 }

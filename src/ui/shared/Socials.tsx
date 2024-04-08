@@ -6,7 +6,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const Socials = ({className}: any) => {
     return (
-        <div className={`${className}`}>
+        <p className={`${className}`}>
             <Link href={"www.facebook.com"}>
                 <FaFacebook/>
             </Link>
@@ -16,7 +16,7 @@ const Socials = ({className}: any) => {
             <Link href={"www.instagram.com"}>
                 <FaInstagram/>
             </Link>
-        </div>
+        </p>
     );
 };
 
