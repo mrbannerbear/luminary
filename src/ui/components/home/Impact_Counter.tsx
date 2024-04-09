@@ -15,7 +15,7 @@ const Impact_Counter = () => {
         // Without the line below, we encounter a TypeScript error saying counterRef.element could be 'null'
         const element = counterRef.current as HTMLInputElement;
         
-        let elementPosition: number = element.getBoundingClientRect().top
+        let elementPosition: number | null = element.getBoundingClientRect().top
         // 4. Figuring out the exact position the user should be to trigger the function
         if (elementPosition < window.innerHeight / 2 + 10) {
           if (numbers < 150000) {
