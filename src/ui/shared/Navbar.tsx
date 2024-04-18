@@ -43,10 +43,10 @@ const Navbar = () => {
       <div className="flex justify-between items-center gap-5">
         <Link href={"/"}>Home</Link>
         <Link href={"/about"}>About</Link>
-        <Link href={"/about"}>Projects</Link>
-        <Link href={"/about"}>Contact</Link>
+        <Link href={"/projects"}>Projects</Link>
+        <Link href={"/contact"}>Contact</Link>
         <Link href={"/blog"}>Blog</Link>
-        <Link href={"/about"}>
+        <Link href={"/sign-up"}>
           <button>Join the Cause</button>
         </Link>
       </div>
