@@ -6,7 +6,7 @@ const Banner = ({ img, title, subtitle }: any) => {
       }}
       className="h-[55vh]  bg-cover bg-center z-40 flex justify-center items-center lg:items-end"
     >
-        <div className="w-1/3 mx-auto text-center lg:top-12 relative">
+        <div className="w-3/4 lg:w-1/3 mx-auto text-center lg:top-12 relative p-4 lg:p-0">
             <div className="bg-purple-50 py-3">
                 <h1 className="text-4xl">{title}</h1>
             </div>
