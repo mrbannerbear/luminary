@@ -1,6 +1,6 @@
 import Headline from "@/ui/components/about/Headline";
+import Statements from "@/ui/components/about/Statements";
 import Banner from "@/ui/shared/Banner";
-
 
 const page = () => {
   return (
@@ -11,8 +11,8 @@ const page = () => {
         subtitle="Who We Are & What We Do"
       />
 
-<Headline/>
-      
+      <Headline />
+      <Statements />
     </div>
   );
 };
